@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Invitation">
+    <title>Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">You Are Invited To</h1>
+        
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScedHs_Ls2Adu8vtCUFedqcTeiP1qSSE_VVE7QeY4du3JE1Cg/viewform" 
+           target="_blank"
+           rel="noopener noreferrer"
+           class="image-link"
+           onclick="showRedirectMessage(event)">
+            <div class="image-wrapper">
+                <img src="raktchap.jpeg" alt="Invitation" class="invitation-image">
+            </div>
+        </a>
+        
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScedHs_Ls2Adu8vtCUFedqcTeiP1qSSE_VVE7QeY4du3JE1Cg/viewform" 
+           class="accept-button" 
+           target="_blank"
+           rel="noopener noreferrer"
+           onclick="showRedirectMessage(event)">
+            Accept Invite
+        </a>
+    </div>
+    
+    <div id="redirectOverlay" class="redirect-overlay">
+        <div class="redirect-message">
+            <div class="loader"></div>
+            <h2>TAKING YOU TO REGISTRATION PAGE</h2>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
